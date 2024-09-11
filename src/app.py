@@ -73,6 +73,7 @@ if selected_nationalities:
 
     st.plotly_chart(bar_fig)
 
+
 # Display filtered data
 if selected_nationalities:
     st.write(f"Filtered data for {selected_year}, {selected_gender}:")
