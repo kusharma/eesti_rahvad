@@ -5,11 +5,11 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # Load the dataset
-df_path = "../data/processed/rahvad_filtered.csv"
+df_path = "rahvad_filtered.csv"
 df = pd.read_csv(df_path)
 
 # Load the GeoJSON data
-with open('../data/raw/gadm41_EST_1.json') as f:
+with open('gadm41_EST_1.json') as f:
     geojson_data = json.load(f)
 
 # Extract state names from GeoJSON
